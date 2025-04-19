@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Simple HTML Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      text-align: center;
+      padding-top: 100px;
+    }
+
+    h1 {
+      color: #9e4242;
+    }
+
+    button {
+      background-color: #74721d;
+      color: white;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #34c73c;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Welcome to My Simple Page</h1>
+  <p>Click the button to change erwrwerewrfh3ya43t!</p>
+  <button onclick="changeBackgroundColor()">Click Me</button>
+
+  <script>
+    function changeBackgroundColor() {
+      const colors = ['#f2f2f2', '#ff9999', '#99ccff', '#ccffcc', '#ffff99'];
+      const randomColor = colors[Math.floor(Math.random() * colors.length)];
+      document.body.style.backgroundColor = randomColor;
+    }
+  </script>
+
+</body>
+</html>
